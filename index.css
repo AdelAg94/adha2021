@@ -1,0 +1,93 @@
+body{
+    background-image: url('photos/sheep-back.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    /* animation-name: changeBackground; */
+    /* animation-duration: 6s; */
+    /* animation-iteration-count: infinite; */
+}
+#eid-title{
+    color: white;
+    text-shadow: 0 1px 2px black,
+                 0 2px 2px black,
+                 0 3px 2px black,
+                 0 4px 2px black,
+                 0 6px 2px black,
+                 0 7px 2px black,
+                 0 8px 2px black,
+                 -3px 12px 2px red,
+                 0 5px 2px black;
+    font-size: 12vw;
+    position: fixed;
+    top: 40%;
+    /* left: 40%; */
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    z-index: 10;
+
+}
+.anim-movedown-rot{
+    position: absolute;
+    top: 10%;
+    animation-name: godown;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    z-index: 1;
+}
+
+.anim-movedown-rot-2{
+    position: absolute;
+    top: 20%;
+    animation-name: godown;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    z-index: 1;
+}
+
+.anim-movedown-rot-3{
+    position: absolute;
+    top: 30%;
+    animation-name: godown;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    z-index: 1;
+}
+#st{
+    left: 5%;
+}
+#nd{
+    left: 20%;
+    animation-delay: 0.25s;
+}
+#rd{
+    left: 40%;
+    animation-delay: 0.5s;
+}
+#foth{
+    left: 60%;
+    animation-delay: 0s;
+}
+#fith{
+    left: 75%;
+    animation-delay: 0.25s;
+}
+.clip{
+    width: 80px;
+}
+@keyframes changeBackground {
+    0% {background-color: red;}
+    50% {background-color: yellow;}
+    100% {background-color: red;}
+}
+@keyframes godown {
+    0% {top:10%; transform: rotate(0deg);}
+    25% {top:40%; transform: rotate(90deg);}
+    50% {top:70%; transform: rotate(180deg);}
+    75% {top:90%; transform: rotate(270deg);}
+    100% {top:100%; transform: rotate(360deg);}
+}

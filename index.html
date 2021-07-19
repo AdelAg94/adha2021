@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="photos/sheep-clip.png" type="image/x-icon">
+    <title>عيد الأضحى 2021</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="anim-movedown-rot" id="st">
+        <img class="clip" src="photos/sheep-clip.png" alt="Sheep-clip.png">
+    </div>
+    <div class="anim-movedown-rot" id="nd">
+        <img class="clip" src="photos/sheep-clip.png" alt="Sheep-clip.png">
+    </div>
+    <div class="anim-movedown-rot" id="rd">
+        <img class="clip" src="photos/sheep-clip.png" alt="Sheep-clip.png">
+    </div>
+    <div class="anim-movedown-rot" id="foth">
+        <img class="clip" src="photos/sheep-clip.png" alt="Sheep-clip.png">
+    </div>
+    <div class="anim-movedown-rot" id="fith">
+        <img class="clip" src="photos/sheep-clip.png" alt="Sheep-clip.png">
+    </div>
+
+    <div class="anim-movedown-rot-2" id="st">
+        <img class="clip" src="photos/sheep-clip.png" alt="Sheep-clip.png">
+    </div>
+    <div class="anim-movedown-rot-2" id="nd">
+        <img class="clip" src="photos/sheep-clip.png" alt="Sheep-clip.png">
+    </div>
+    <div class="anim-movedown-rot-2" id="rd">
+        <img class="clip" src="photos/sheep-clip.png" alt="Sheep-clip.png">
+    </div>
+    <div class="anim-movedown-rot-2" id="foth">
+        <img class="clip" src="photos/sheep-clip.png" alt="Sheep-clip.png">
+    </div>
+    <div class="anim-movedown-rot-2" id="fith">
+        <img class="clip" src="photos/sheep-clip.png" alt="Sheep-clip.png">
+    </div>
+
+    <div class="anim-movedown-rot-3" id="st">
+        <img class="clip" src="photos/sheep-clip.png" alt="Sheep-clip.png">
+    </div>
+    <div class="anim-movedown-rot-3" id="nd">
+        <img class="clip" src="photos/sheep-clip.png" alt="Sheep-clip.png">
+    </div>
+    <div class="anim-movedown-rot-3" id="rd">
+        <img class="clip" src="photos/sheep-clip.png" alt="Sheep-clip.png">
+    </div>
+    <div class="anim-movedown-rot-3" id="foth">
+        <img class="clip" src="photos/sheep-clip.png" alt="Sheep-clip.png">
+    </div>
+    <div class="anim-movedown-rot-3" id="fith">
+        <img class="clip" src="photos/sheep-clip.png" alt="Sheep-clip.png">
+    </div>
+    <h1 id="eid-title">
+        عيد أضحى مبارك
+    </h1>
+    <audio src="takberat.mp3"></audio>
+    <script>
+        var takberat =  new Audio('takberat.mp3')
+        var anysheep = document.getElementsByClassName('clip')
+        Array.from(anysheep).forEach(element => {
+            element.addEventListener('click', function(){
+                takberat.play()
+            })
+        });
+    </script>
+</body>
+</html>
